@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Array</title>
+    </head>
+    <body>
+        <h1>Arrays in JS</h1>
+        <p id="demo"></p>
+        <p id="project"></p>
+        <p id="myjoin"></p>
+        <p id="myfirstpop"></p>
+        <p id="mysecondpop"></p>
+        <script>
+            //creating an array
+            var fruits=['Apples','Bananas','Watermelons','Guavas','Mangoes'];
+            //display an element from the array
+            document.getElementById("demo").innerHTML="The third fruit is:" +fruits[2];
+            var players=['Ronaldo','Messi','Neymar','Iniesta','Xavi'];
+            document.getElementbyId("project").innerHTML="The third player is:" +players[2];
+            document.getElementbyId("myjoin").innerHTML = fruits.join("😃");
+            document.getElementbyId("myfirstpop").innerHTML =fruits;
+            fruits.pop();
+            document.getElementbyId("mysecondpop").innerHTML = fruits
+        </script>
+    </body>
+</html>
